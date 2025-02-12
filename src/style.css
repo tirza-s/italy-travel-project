@@ -1,0 +1,93 @@
+:root {
+    --primary-font: "Poppins", serif;
+    --primary-color: rgba(242, 247, 237, 0.952);
+    --secondary-color: rgba(15, 15, 15, 0.976);
+}
+
+body {
+    font-family: var(--primary-color);
+    margin: 0;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4)), url(../src/images/dolomite-mountain.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 200px 0;
+}
+
+header h1 {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 1.5;
+    letter-spacing: 4.5px;
+    margin: 32px 0;
+}
+
+header h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: 2.2px;
+
+}
+
+header a {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    color: var(--secondary-color);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    header {
+        padding: 80px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-top: 32px 0 18px 0;
+
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    header h3 {
+        font-size: 1.2rem;
+    }
+
+    header a {
+        padding: 12px 14px;
+        font-size: 0.75rem;
+        margin-top: 34px;
+    }
+}
