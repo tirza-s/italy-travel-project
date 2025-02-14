@@ -14,12 +14,47 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
-    <header>
+
+    <nav class="nav-grid">
+        <div class="nav-logo">
+            <p class="logo-rotate">Dolo travel</p>
+
+        </div>
+        <div class="nav-col">
+            <a href="#home" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="nav-item"> About</a>
+            <a href="#activities" class="nav-item"> Activities</a>
+            <a href="#lodging" class="nav-item">Lodging</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+        <div class="nav-account">
+            <a href="#" class="nav-item"> Create account</a>
+            <a href="#" class="nav-item"> Login</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#activities" class="nav-item">Activities</a>
+            <a href="#lodging" class="nav-item">Lodging</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="#" class="nav-item hide">Create account</a>
+            <a href="#" class="nav-item hide">Login</a>
+        </div>
+
+    </nav>
+
+    <header id="home">
         <h3>.Travel.</h3>
         <h1>Welcome to Dolomites</h1>
         <h2>La dolce vita</h2>
@@ -27,10 +62,14 @@
     </header>
 
     <main>
-        <section class="grid grid-2-columns">
+
+        <section class="grid grid-2-columns" id="about">
             <img src="./src/images/dolomite-italy.jpg" alt="picture of dolomites mountain" class="responsive-image">
+
             <div>
-                <h2 class="text-center">Why Dolomites ?</h2>
+                <h2 class="text-center">Why Dolomites ?
+
+                </h2>
                 <h3 class="text-center">Experience the Magic of the Dolomites</h3>
                 <p>Nestled in the heart of the Alps, the Dolomites are a UNESCO World Heritage site offering a perfect
                     blend
@@ -64,8 +103,8 @@
             </div>
         </section>
 
-        <section class="secondary">
-            <h2 class="text-center">Top Things to Do in the Dolomites</h2>
+        <section class="secondary" id="more">
+            <h2 class="text-center" id="activities">Top Things to Do in the Dolomites</h2>
             <h3 class="text-center">Must-Try Adventures & Experiences</h3>
 
             <div class="grid grid-card">
@@ -173,12 +212,48 @@
         </section>
 
         <section class="tertiary">
-            <h2 class="text-center">Accommodation</h2>
+            <h2 class="text-center" id="lodging">Accommodation</h2>
             <h3 class="text-center">Best place to stay</h3>
 
-        </section>
+            <div class="grid accommodation-grid">
+                <div class="airbnb-embed-frame" data-id="50997682" data-view="home" data-hide-price="true"><a
+                        href="https://www.airbnb.com/rooms/50997682?check_in=2025-03-22&amp;check_out=2025-03-29&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View
+                        On Airbnb</a><a
+                        href="https://www.airbnb.com/rooms/50997682?check_in=2025-03-22&amp;check_out=2025-03-29&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        rel="nofollow">Rental unit in Santa Cristina Valgardena · ★5.0 · 1 bedroom · 16 beds · 1
+                        bath</a>
+                    <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                </div>
 
+                <div class="airbnb-embed-frame" data-id="32080319" data-view="home" data-hide-price="true"><a
+                        href="https://www.airbnb.com/rooms/32080319?check_in=2025-03-15&amp;check_out=2025-03-22&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        target="_blank">View
+                        On Airbnb</a><a
+                        href="https://www.airbnb.com/rooms/32080319?check_in=2025-03-15&amp;check_out=2025-03-22&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        rel="nofollow">Rental unit in Santa Cristina Valgardena · ★4.93 · 1 bedroom · 2 beds · 1
+                        bath</a>
+                    <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                </div>
+
+                <div class="airbnb-embed-frame" data-id="41635833" data-view="home" data-hide-price="true"><a
+                        href="https://www.airbnb.com/rooms/41635833?check_in=2025-02-25&amp;check_out=2025-03-02&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        target="_blank">View
+                        On Airbnb</a><a
+                        href="https://www.airbnb.com/rooms/41635833?check_in=2025-02-25&amp;check_out=2025-03-02&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                        rel="nofollow">Chalet in Ru · ★4.96 · 2 bedrooms · 3 beds · 2.5 baths</a>
+                    <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+                </div>
+
+            </div>
+        </section>
     </main>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top-container">
+        <a href="#" class="back-to-top" id="backToTopButton">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
 
     <footer>
         <section class="grid grid-3-columns">
@@ -201,13 +276,13 @@
 
                     <li>
                         <i class="fa-regular fa-map"></i>
-                        <a href="https://maps.app.goo.gl/Vi7aQ1G37XWtuVSK6">Dolomites map</a>
+                        <a href="https://maps.app.goo.gl/Vi7aQ1G37XWtuVSK6" target="_blank">Dolomites map</a>
 
                     </li>
                 </ul>
             </div>
             <div>
-                <h3>About me</h3>
+                <h3 id="contact">About me</h3>
                 <p>Hi, I'm Tirza. The Dolomites are one of my favorite places.</br>They’re absolutely breathtaking.
                     Stunning landscapes and natural beauty.
                 </p>
@@ -219,9 +294,12 @@
                     passion
                     for coding with my love for beautiful destinations.</p>
             </div>
+
         </section>
     </footer>
 
+
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
